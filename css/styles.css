@@ -1,0 +1,308 @@
+@import url(reset.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700|Orbitron:700,400);
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+html{
+    background-color: black;
+}
+body{
+    font-family: "Orbitron";
+    font-size: 14px;
+    color: black;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+p{
+    font-family: "Raleway";
+    word-spacing: 3px;
+    word-wrap: break-word;
+}
+header{
+    background-color: black;
+    width: 100%;
+    height: 120px;
+}
+#logo{
+    width: auto;
+    height: 120px;
+    float: left;
+    margin: 0 15px;
+}
+header nav{
+    float: right;
+    width: 770px;
+}
+header nav ul{
+    width: 100%;
+    height: 70px;
+}
+header nav ul li{
+    margin: 0 10px;
+    height: 70px;
+    float: left;
+}
+header nav ul li a{
+    width: 100%;
+    height: 70px;
+    line-height: 90px;
+    color: yellow;
+    text-decoration: none;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all linear 200ms;
+}
+
+header nav ul li a:hover{
+    background-color: dimgrey;
+    transition: all linear 200ms;
+}
+header nav::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    color: yellow;
+    font-size: 24px;
+    text-align: center;
+    line-height: 120px;
+}
+main{
+    background-color: ivory;
+    color: yellow;
+    padding: 50px 15px;
+    border-radius: 10px;
+    position: relative;
+}
+main > article{
+    background-color: black;
+    width: 49%;
+    height: auto;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid dimgrey;
+    padding: 10px;
+    box-shadow: 1px 1px 3px dimgrey;
+    vertical-align: middle;
+    position: relative;
+    margin: 5px 0;
+}
+main > article img{
+    width: 150px;
+    float: left;
+    margin: 5px;
+}
+main > article h2{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+main > article h2 a{
+    color: yellow;
+    text-decoration: none;
+}
+main > article h2 a:hover{
+    color: dimgrey;
+}
+main > article p{
+    text-align: justify;
+    font-size: 14px;
+}
+main > article p a{
+    color: yellow;
+    text-decoration: none;
+}
+main > article p a:hover{
+    color: dimgrey;
+}
+.lireSuite{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.lireSuite:hover{
+    color: dimgrey;
+}
+.error{
+    color: red;
+    background-color: lightpink;
+    width: 75%;
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+}
+.success{
+    color: green;
+    background-color: lightgreen;
+    width: 75%;
+    padding: 15px;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+}
+.fullPost{
+    width: 100%;
+    float: none;
+    height: auto;
+}
+.fullPost > img{
+    width: 450px;
+}
+.postInfos{
+    color: dimgrey;
+    font-size: 12px;
+    position: absolute;
+    bottom: -20px;
+    left: 5px;
+}
+form, #commentaires{
+    width: 49%;
+    background-color: black;
+    border-radius: 5px;
+    margin: 50px 0;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+form h2, #commentaires h2{
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+label{
+    display: block;
+    margin: 10px 0;
+}
+label::after{
+    content: "*";
+    color: red;
+    margin-left: 5px;
+    font-size: 10px;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: "Raleway";
+}
+input[type=submit]{
+    display: block;
+    width: auto;
+    margin: 15px auto;
+    transition: all linear 200ms;
+    border: 1px solid yellow;
+    background-color: black;
+    color: yellow;
+    font-family: "Orbitron";
+}
+input[type=submit]:hover{
+    background-color: dimgrey;
+    transition: all linear 200ms;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: "Raleway";
+}
+.commentaire{
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    vertical-align: middle;
+    position: relative;
+    margin: 30px 0;
+    color: #333;
+    position: relative;
+}
+.flecheComm{
+    position: absolute;
+    bottom:-7px;
+    left: 57px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 10px 0 10px;
+    border-color: #fff transparent transparent transparent;
+}
+.commentInfos{
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+.obligatoire{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 10px;
+}
+.obligatoire span{
+    color: red;
+}
+.pagination{
+    width: auto;
+    margin-top: 15px;
+    color: yellow;
+    font-size: 10px;
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+}
+.pagination ul{
+    width: 100%;
+}
+.pagination ul li{
+    float: left;
+    margin: 5px;
+    padding: 3px;
+}
+.pagination ul li a{
+    width: 100%;
+    text-decoration: none;
+    color: yellow;
+    font-size: 10px;
+    text-align: center;
+    transition: all linear 200ms;
+    border-radius: 0 0 5px 5px;
+    padding: 3px;
+}
+.pagination ul li a:hover{
+    color: dimgrey;
+    background-color: white;
+    transition: all linear 200ms;
+}
+.active{
+    background-color: white;
+    color: dimgrey;
+    border-radius: 0 0 5px 5px;
+}
+.user{
+    width: 24,9%;
+}
+.user p{
+    text-align: left;
+    margin: 10px 0;
+    font-size: 12px;
+}
